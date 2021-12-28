@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 :root {
   font-size: 16px;
 }
@@ -46,6 +47,72 @@ section {
           perspective-origin: 50% 50%;
 }
 
+@keyframes scroll {
+  100% {
+    background-position: -3000px 0px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    -webkit-animation: scroll 200s linear infinite;
+            animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+:root {
+  font-size: 16px;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Croissant One', cursive;
+}
+
+body, html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.front {
+  -webkit-animation: scroll 70s linear infinite;
+  animation: scroll 70s linear infinite;
+  background: url("./img/desktop/bg-desktop.jpg");
+  background-size: cover;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
 @-webkit-keyframes scroll {
   100% {
     background-position: -3000px 0px;
@@ -61,7 +128,7 @@ section {
 @media (prefers-reduced-motion) {
   .wrapper {
     -webkit-animation: scroll 200s linear infinite;
-            animation: scroll 200s linear infinite;
+    animation: scroll 200s linear infinite;
   }
 }
 
