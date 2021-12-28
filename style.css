@@ -25,7 +25,7 @@ section {
 .front {
   -webkit-animation: scroll 70s linear infinite;
           animation: scroll 70s linear infinite;
-  background: url("/img/Nuevo proyecto.jpg");
+  background: url("/img/mobile/mob700.jpg");
   background-size: cover;
   color: #eee;
   height: 100vh;
