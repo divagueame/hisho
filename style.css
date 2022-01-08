@@ -15,6 +15,9 @@ body, html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -27,8 +30,8 @@ section {
 
 .front {
   position: absolute;
-  -webkit-animation: scroll 22s linear infinite;
-          animation: scroll 22s linear infinite;
+  -webkit-animation: scroll 1122s linear infinite;
+          animation: scroll 1122s linear infinite;
   background: url("./img/desktop/bg-desktop.jpg");
   background-size: cover;
   color: #eee;
@@ -48,7 +51,13 @@ section {
           perspective: 1000px;
   -webkit-perspective-origin: 50% 50%;
           perspective-origin: 50% 50%;
-  opacity: 0;
+  overflow: hidden;
+}
+
+.front h1 {
+  padding: 1rem;
+  color: white;
+  background-color: #446153;
 }
 
 @-webkit-keyframes scroll {
@@ -84,7 +93,14 @@ section {
   }
 }
 
-#bg-video1 {
+.video-wrapper {
+  border: 4px solid white;
+  position: relative;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.video-wrapper #bg-video1 {
   position: fixed;
   z-index: -1;
   left: 50%;
