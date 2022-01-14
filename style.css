@@ -28,6 +28,41 @@ section {
   min-height: 100vh;
 }
 
+.bg-moving-wrapper {
+  position: relative;
+}
+
+.bg-moving {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-animation: scroll 1122s linear infinite;
+          animation: scroll 1122s linear infinite;
+  background: url("./img/desktop/bg-desktop.jpg");
+  background-size: cover;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+
 .front {
   position: absolute;
   -webkit-animation: scroll 1122s linear infinite;
