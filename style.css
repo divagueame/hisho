@@ -33,7 +33,7 @@ section {
 }
 
 .bg-moving {
-  background-color: white;
+  background-color: #e7bebe;
   position: absolute;
   left: 0;
   right: 0;
@@ -65,13 +65,9 @@ section {
 
 .front {
   position: absolute;
-  -webkit-animation: scroll 1122s linear infinite;
-          animation: scroll 1122s linear infinite;
-  background: url("./img/desktop/bg-desktop.jpg");
   background-size: cover;
   color: #eee;
   height: 100vh;
-  min-width: 360px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
